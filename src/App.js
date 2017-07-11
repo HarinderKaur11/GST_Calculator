@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Logic} from './components/Logic.js' ;
+import {Search} from './components/Search.js' ;
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           on both goods and services and will subsume and replace the current indirect taxes such as excise, VAT, and service tax..
         </p>
         <Logic />
+       
       </div>
     );
   }
