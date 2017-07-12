@@ -2,141 +2,62 @@ import Autosuggest from 'react-autosuggest';
 import React, { Component } from 'react';
 import './SuggestionScrollbar.css';
 
-const GoodsArray = [
+const ServicesArray = [
   {
-    name: 'Live asses, mules and hinnies',
-    gst: '0%',
-    id:'1'
+    name: 'C',
+    year: 1972
   },
   {
-    name: 'Live bovine animals',
-    gst: '0%',
-    id:'2'
+    name: 'C#',
+    year: 2000
   },
   {
-    name: 'Live swine',
-    gst: '0%',
-    id:'3'
+    name: 'C++',
+    year: 1983
   },
   {
-    name: 'Live sheep and goats',
-    gst: '0%',
-    id:'4'
+    name: 'Clojure',
+    year: 2007
   },
   {
-    name: ' Live poultry, that is to say, fowls of the species Gallus domesticus, ducks, geese, turkeys and guinea fowls. ',
-    gst: '5%',
-    id:'5'
+    name: 'Elm',
+    year: 2012
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Go',
+    year: 2009
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Haskell',
+    year: 1990
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Java',
+    year: 1995
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Javascript',
+    year: 1995
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Perl',
+    year: 1987
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'PHP',
+    year: 1995
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Python',
+    year: 1991
   },
   {
-    name: '',
-    gst: '',
-    id:
+    name: 'Ruby',
+    year: 1995
   },
   {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
-  },
-  {
-    name: '',
-    gst: '',
-    id:
+    name: 'Scala',
+    year: 2003
   }
 ];
 
@@ -154,7 +75,7 @@ function getSuggestions(value) {
 
   const regex = new RegExp('^' + escapedValue, 'i');
 
-  return GoodsArray.filter(product => regex.test(product.name));
+  return ServicesArray.filter(service => regex.test(service.name));
 }
 
 function getSuggestionValue(suggestion) {
@@ -167,7 +88,7 @@ function renderSuggestion(suggestion) {
   );
 }
 
-export class SuggestionScrollbar extends React.Component {
+export class ServicesArrayComponent extends React.Component {
   constructor() {
     super();
 
@@ -198,7 +119,7 @@ export class SuggestionScrollbar extends React.Component {
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
-      placeholder: "Enter the product here...",
+      placeholder: "Enter the service here...",
       value,
       onChange: this.onChange
     };
@@ -215,4 +136,4 @@ export class SuggestionScrollbar extends React.Component {
   }
 }
 
-export default SuggestionScrollbar;
+export default ServicesArrayComponent;
