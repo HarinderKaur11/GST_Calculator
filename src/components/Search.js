@@ -4,28 +4,8 @@ import {SuggestionScrollbar} from './SuggestionScrollbar.js';
 import {ServicesArrayComponent} from './ServicesArrayComponent.js';
 
 
-const productsArray=[
-	{
-		id: 1,
-		name: 'mobile',
-		gst: '12%'
-	},
-	{
-		id: 2,
-		name: 'laptop',
-		gst: '28%'
-	},
-	{
-		id: 3,
-		name: 'toys',
-		gst: '2%'
-	}
-	]
-
-
 export class Search extends Component{
 	
-
 	render(){
 
 		const styleInput={
@@ -35,7 +15,7 @@ export class Search extends Component{
 		left: 20,
 	};
 
-		return (
+	return (
 			<div>
 				<SuggestionScrollbar />
 				<ServicesArrayComponent />
@@ -50,7 +30,8 @@ export class Search extends Component{
 				</select>
 			{/*<FilterSearch products={this.props.productsArray}/> */}
 			
-			</div>);
+			</div>
+			);
 			
 	}
 }
