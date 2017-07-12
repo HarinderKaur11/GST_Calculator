@@ -4,64 +4,33 @@ import './SearchFields.css';
 
 const ServicesArray = [
   {
-    name: 'C',
-    year: 1972
+    name: 'Services by an entity registered under section 12AA of the Income-tax Act, 1961 (43 of 1961) by way of charitable activities.',
+    gst:'0%',
+    id:'1'
   },
   {
-    name: 'C#',
-    year: 2000
+    name: 'Services by way of transfer of a going concern, as a whole or an independent part thereof',
+    gst:'0%',
+    id:'2'
   },
   {
-    name: 'C++',
-    year: 1983
+    name: 'Pure services (excluding works contract service or other composite supplies involving supply of any goods) provided to the Central Government, State Government or Union territory or local authority or a Governmental authority by way of any activity in relation to any function entrusted to a Panchayat under article 243G of the Constitution or in relation to any function entrusted to a Municipality under article 243W of the Constitutio',
+    gst:'0%',
+    id:'3'
   },
   {
-    name: 'Clojure',
-    year: 2007
+    name: 'Services by Central Government, State Government, Union territory, local authority or governmental authority by way of any activity in relation to any function entrusted to a municipality under article 243 W of the Constitution',
+    gst:'0%',
+    id:'4'
   },
   {
-    name: 'Elm',
-    year: 2012
-  },
-  {
-    name: 'Go',
-    year: 2009
-  },
-  {
-    name: 'Haskell',
-    year: 1990
-  },
-  {
-    name: 'Java',
-    year: 1995
-  },
-  {
-    name: 'Javascript',
-    year: 1995
-  },
-  {
-    name: 'Perl',
-    year: 1987
-  },
-  {
-    name: 'PHP',
-    year: 1995
-  },
-  {
-    name: 'Python',
-    year: 1991
-  },
-  {
-    name: 'Ruby',
-    year: 1995
-  },
-  {
-    name: 'Scala',
-    year: 2003
+    name: 'Services by a governmental authority by way of any activity in relation to any function entrusted to a Panchayat under article 243G of the Constitution',
+    gst:'0%',
+    id:'5'
   }
+  
 ];
 
-// https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions#Using_Special_Characters
 function escapeRegexCharacters(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
