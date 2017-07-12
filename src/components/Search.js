@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {FilterSearch} from './FilterSearch.js';
-import {SuggestionComponent} from './SuggestionComponent.js';
+import {SuggestionScrollbar} from './SuggestionScrollbar.js';
 
 const productsArray=[
 	{
@@ -47,7 +47,7 @@ export class Search extends Component{
 					<option>28%</option>
 				</select>
 			{/*<FilterSearch products={this.props.productsArray}/> */}
-			<SuggestionComponent />
+			<SuggestionScrollbar />
 			</div>);
 			
 	}
