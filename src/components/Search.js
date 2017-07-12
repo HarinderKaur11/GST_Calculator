@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {FilterSearch} from './FilterSearch.js';
-import {SuggestionScrollbar} from './SuggestionScrollbar.js';
-import {ServicesArrayComponent} from './ServicesArrayComponent.js';
+import {GoodsComponent} from './GoodsComponent.js';
+import {ServicesComponent} from './ServicesComponent.js';
 
 
 export class Search extends Component{
@@ -17,8 +16,8 @@ export class Search extends Component{
 
 	return (
 			<div>
-				<SuggestionScrollbar />
-				<ServicesArrayComponent />
+				<GoodsComponent />
+				<ServicesComponent />
 				<select style={styleInput} >
 					<option>No GST</option>
 					<option>0.25%</option>
@@ -28,7 +27,6 @@ export class Search extends Component{
 					<option>18%</option>
 					<option>28%</option>
 				</select>
-			{/*<FilterSearch products={this.props.productsArray}/> */}
 			
 			</div>
 			);
