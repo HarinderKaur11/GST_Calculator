@@ -1,6 +1,6 @@
 import Autosuggest from 'react-autosuggest';
 import React, { Component } from 'react';
-import './SuggestionScrollbar.css';
+import './SearchFields.css';
 
 const ServicesArray = [
   {
@@ -88,7 +88,7 @@ function renderSuggestion(suggestion) {
   );
 }
 
-export class ServicesArrayComponent extends React.Component {
+export class ServicesComponent extends React.Component {
   constructor() {
     super();
 
@@ -136,4 +136,4 @@ export class ServicesArrayComponent extends React.Component {
   }
 }
 
-export default ServicesArrayComponent;
+export default ServicesComponent;

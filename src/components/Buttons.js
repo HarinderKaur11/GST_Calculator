@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Search} from './Search.js';
 
- export class Logic extends Component{
+ export class Buttons extends Component{
 
  	constructor(props){
  		super(props);
@@ -35,4 +35,4 @@ import {Search} from './Search.js';
 	}
 }
 
-export default Logic;
+export default Buttons;
